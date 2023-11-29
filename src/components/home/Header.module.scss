@@ -1,0 +1,292 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url("../../assets/images/header-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .headerContents {
+        width: 100%;
+        height: 73vh;
+        color: #ffffff;
+        padding: 0 5rem 3rem;
+        align-self: flex-end;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 0.7fr 4fr 4fr;
+        > h1 {
+            height: 3rem;
+            font-weight: 300;
+            font-size: 2.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .headerDescription {
+            height: 1.7rem;
+            display: flex;
+            align-items: center;
+            color: #ffffffb3;
+        }
+        .searchInputContainer {
+            direction: ltr;
+            justify-items: center;
+            .searchInput {
+                direction: rtl;
+                width: 40rem;
+                height: 3.5rem;
+                padding: 0 4rem;
+                font-weight: 600;
+                border-radius: 50px;
+            }
+        }
+        .headerButtonsBox {
+            gap: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .headerButton {
+                width: 10rem;
+                height: 15rem;
+                cursor: pointer;
+                border-radius: 5px;
+                padding: 1rem;
+                opacity: 0.9;
+                transition: all 0.25s ease-in-out;
+                box-shadow: 0 5px 15px #0000001a;
+                &:hover {
+                    opacity: 1;
+                    transform: translateY(-20px);
+                    transition: all 0.25s ease-in-out;
+                    box-shadow: 0 15px 30px #0000004d;
+                }
+                > div {
+                    border-radius: 18%;
+                    object-fit: scale-down;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .btnTitle {
+                    gap: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: transparent;
+                    h5, p {
+                        color: #000000;
+                        text-wrap: nowrap;
+                    }
+                }
+            }
+            .chatgptButton {
+                background-image: linear-gradient(#ffae46, #ff428d 100%);
+                > div {
+                    background-color: #74aa9c;
+                }
+            }
+            .perplexityButton {
+                background-image: linear-gradient(#ffd746, #ff984c 100%);
+                > div {
+                    background-color: #000000;
+                }
+            }
+            .poeButton {
+                background-image: linear-gradient(#58a0ff, #5966ff 120%);
+                > div {
+                    background-color: #000000;
+                }
+            }
+            .midjourneyButton {
+                background-image: linear-gradient(#ffda50, #ff46da 120%);
+            }
+        }
+    }
+}
+
+.modalContainer {
+    min-width: 50vw;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    .modalHeader {
+        width: 100%;
+        padding: 0 1rem 1rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        border-bottom: 2px solid #e9ecef;
+        gap: 1rem;
+        > h5 {
+            font-size: 1.25rem;
+        }
+        .modalIcon {
+            border-radius: 10px;
+        }
+        .modalHeaderButton {
+            width: 2rem;
+            height: 2rem;
+            justify-self: start;
+        }
+        .stepsChart {
+            width: 100%;
+            grid-column: 1/-1;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: center;
+            justify-items: center;
+            .circularArrow {
+                pointer-events: none;
+            }
+            > p {
+                font-weight: bold;
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .modalBody {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem 0.5rem;
+        gap: 1rem;
+        .confirmation {
+            width: 100%;
+            height: 6rem;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            > label {
+                width: 8rem;
+                font-weight: bold;
+            }
+            > button {
+                cursor: pointer;
+                width: 5rem;
+                height: 100%;
+                direction: rtl;
+                font-size: 1rem;
+                font-weight: 600;
+                border: 1px solid #e3e9ed;
+                border-radius: 0 5px 5px 0;
+                color: white;
+                background-color: #4DA9E4;
+                position: relative;
+            }
+            > input {
+                width: 100%;
+                height: 100%;
+                direction: rtl;
+                padding: 1rem;
+                font-size: 1rem;
+                border: 2px solid #e3e9ed;
+                border-inline-start: 0;
+                border-radius: 5px 0 0 5px;
+                &:focus {
+                    border-color: #4DA9E4;
+                }
+            }
+        }
+        .choosePlane {
+            width: 100%;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 2px 4px #00000033;
+            .sharedAccountHeader, .personalPlanHeader{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .sharedAccountBody, .personalPlanBody {
+                width: 100%;
+                padding: 2rem;
+                transition: 0.35s ease;
+                background-color: #f8f9fa;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 1rem;
+                > h5 {
+                    font-size: 1.25rem;
+                }
+                .discount {
+                    width: 100%;
+                    height: 2.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    > label {
+                        width: 10rem;
+                        font-weight: bold;
+                    }
+                    > button {
+                        cursor: pointer;
+                        width: 8rem;
+                        height: 100%;
+                        direction: rtl;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        border-radius: 0 5px 5px 0;
+                        color: #ffffff;
+                        background-color: #4DA9E4;
+                        position: relative;
+                    }
+                    > input {
+                        width: 15rem;
+                        height: 100%;
+                        direction: rtl;
+                        padding: 1rem;
+                        font-size: 1rem;
+                        border: 2px solid #e3e9ed;
+                        border-inline-start: 0;
+                        border-radius: 5px 0 0 5px;
+                        &:focus {
+                            border-color: #4DA9E4;
+                        }
+                        &::placeholder {
+                            color: #84888a;
+                        }
+                    }
+                }
+                .actionButtons {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 1rem;
+                    > button {
+                        width: 10rem;
+                        height: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .circularArrow {
+        animation: circularArrowSpin infinite 3s linear;
+    }
+}
+
+@keyframes circularArrowSpin {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

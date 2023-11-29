@@ -1,0 +1,12 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" stroke-miterlimit="2" stroke-linejoin="round" clip-rule="evenodd" fill-rule="evenodd">
+ <title>Perplexity</title>
+ <defs>
+  <filter id="svg_1_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#20808d" filter="url(#svg_1_blur)" stroke-width="20" id="svg_1" stroke-miterlimit="10" fill="none" d="m427.57856,28.94351l-170.95813,129.23266l170.95813,0l0,-129.23266l0,35.38125l0,-35.38125zm-170.97614,129.23266l-170.97614,-129.23266l0,129.23266l170.97614,0zm-0.37811,-148.24226l0,489.51764m171.35424,-212.06992l-170.95813,-129.23266l0,185.26883l170.95813,129.23266l0,-185.26883zm-341.93427,0l170.97614,-129.23266l0,185.26883l-170.97614,129.23266l0,-185.26883zm-73.37066,-129.23266l0,184.52095l73.35265,0l0,-55.2883l170.97614,-129.23266l-244.32879,0zm244.32879,0l170.95813,129.23266l0,55.2883l73.37066,0l0,-184.52095l-244.32879,0z" class="cls-1"/>
+ </g>
+</svg>

@@ -1,0 +1,30 @@
+.footer {
+    height: 65vh;
+    background-color: #1d262d;
+    padding: 5.5rem;
+    display: grid;
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: start;
+    align-items: center;
+    .tableHeader {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: #495057;
+    }
+    .tableData {
+        cursor: pointer;
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        color: #898b96;
+        -webkit-transition: 0.15s all cubic-bezier(0.39, 0.575, 0.565, 1);
+        transition: 0.15s all cubic-bezier(0.39, 0.575, 0.565, 1);
+        &:hover {
+            height: 50%;
+            border-bottom: 1px solid #a5b7c6;
+            opacity: 1;
+            -webkit-transform: translateY(-3px) translateZ(0);
+            transform: translateY(-3px) translateZ(0);
+        }
+    }
+}
