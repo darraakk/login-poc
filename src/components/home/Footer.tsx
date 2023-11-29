@@ -11,33 +11,33 @@ const Footer = () => {
             <p className={styles.tableHeader}>دامنه‌ها</p>
             <p className={styles.tableHeader}>راه‌های ارتباطی</p>
 
-            <a className={styles.tableData}>میزبانی مشترک</a>
-            <a className={styles.tableData}>درباره ما</a>
-            <a className={styles.tableData}>حساب کاربری شما</a>
-            <a className={styles.tableData}>برنامه همکاری</a>
-            <a className={styles.tableData}>بررسی دامنه</a>
-            <a className={styles.tableData}>تماس با ما</a>
+            <p className={styles.tableData}>میزبانی مشترک</p>
+            <p className={styles.tableData}>درباره ما</p>
+            <p className={styles.tableData}>حساب کاربری شما</p>
+            <p className={styles.tableData}>برنامه همکاری</p>
+            <p className={styles.tableData}>بررسی دامنه</p>
+            <p className={styles.tableData}>تماس با ما</p>
 
-            <a className={styles.tableData}>میزبانی ابری</a>
-            <a className={styles.tableData}>شرایط</a>
-            <a className={styles.tableData}>مستندات</a>
-            <a className={styles.tableData}>روش پرداخت</a>
-            <a className={styles.tableData}>خرید دامنه</a>
-            <a className={styles.tableData}>سوالات متداول</a>
+            <p className={styles.tableData}>میزبانی ابری</p>
+            <p className={styles.tableData}>شرایط</p>
+            <p className={styles.tableData}>مستندات</p>
+            <p className={styles.tableData}>روش پرداخت</p>
+            <p className={styles.tableData}>خرید دامنه</p>
+            <p className={styles.tableData}>سوالات متداول</p>
 
-            <a className={styles.tableData}>میزبانی VPS</a>
-            <a className={styles.tableData}>حریم خصوصی</a>
-            <a className={styles.tableData}>تایید ICANN</a>
-            <a className={styles.tableData}>مقایسه</a>
-            <a className={styles.tableData}>تبدیل دامنه</a>
-            <a className={styles.tableData}>آموزش ها</a>
+            <p className={styles.tableData}>میزبانی VPS</p>
+            <p className={styles.tableData}>حریم خصوصی</p>
+            <p className={styles.tableData}>تایید ICANN</p>
+            <p className={styles.tableData}>مقایسه</p>
+            <p className={styles.tableData}>تبدیل دامنه</p>
+            <p className={styles.tableData}>آموزش ها</p>
             
-            <a className={styles.tableData}>میزبانی اختصاصی</a>
+            <p className={styles.tableData}>میزبانی اختصاصی</p>
             <p className={styles.tableData}/>
-            <a className={styles.tableData}>کوکی ها</a>
-            <a className={styles.tableData}>نظرات</a>
-            <a className={styles.tableData}>فروش دامنه</a>
-            <a className={styles.tableData}>مرکز پشتیبانی</a>
+            <p className={styles.tableData}>کوکی ها</p>
+            <p className={styles.tableData}>نظرات</p>
+            <p className={styles.tableData}>فروش دامنه</p>
+            <p className={styles.tableData}>مرکز پشتیبانی</p>
         </div>
     );
 };
